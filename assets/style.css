@@ -1,24 +1,43 @@
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: 19px;
   line-height: 1;
+  background-color: rgb(224, 227, 233);
+}
+
+h1 {
+  font-family: 'Akaya Kanadaka', cursive;
+
+}
+
+#currentDay {
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: larger;
+}
+
+
+.leaddescription {
+  font-family: 'Mulish', sans-serif;
+  font-size: medium;
 }
 
 textarea{
   background: transparent;
   border: none;
   resize: none;
-  color: #a27474;
+  color: #000000;
   border-left: 1px solid black;
   padding: 10px;
+  font-family: 'Mulish', sans-serif;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: rgb(30, 31, 69);
   border-radius: 0;
   border-bottom: 10px solid black;
+  font-family: 'Mulish', sans-serif;
 }
 
 .description{
@@ -28,12 +47,6 @@ textarea{
 .time-block{
   text-align: center;
   border-radius: 15px;
-}
-
-.flex-row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
 }
 
 .row {
@@ -50,28 +63,27 @@ textarea{
 
 .past {
   background-color: #d3d3d3;
-  color: rgb(38, 38, 38);
+  color: white;
 }
 
 .present {
-  background-color: #ff6961;
-  color: rgb(38, 38, 38);
+  background-color: #edc5c3;
+  color: white;
 }
 
 .future {
-  background-color: #77dd77;
-  color: rgb(38, 38, 38);
+  background-color: #d1e1ac;
+  color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border-left: 1px rgb(255, 255, 255);
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color: #4b8fe3;
   color: white;
 }
 
 .saveBtn i:hover {
   font-size: 20px;
-  transition: all .3s ease-in-out;
 }
