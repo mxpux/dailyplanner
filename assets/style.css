@@ -40,7 +40,7 @@ textarea{
   font-family: 'Mulish', sans-serif;
 }
 
-.description{
+.formControl{
   white-space: pre-wrap;
 }
 
@@ -85,5 +85,5 @@ textarea{
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 30px;
 }

@@ -34,6 +34,25 @@ var currentHour = moment().hour();
   }
 });
 
+  $(".saveBtn").on("click", function () {
+  // save Agenda to local storage
+  saveAgenda = $(this).siblings(".formControl").val();
+  console.log(saveAgenda);
+  //save time-block to local storage
+  saveTime = $(this).closest(".time-block").attr("id");
+  console.log(saveTime);
+  localStorage.setItem(saveTime, saveAgenda);
 
+  $("9 .formControl").val(localStorage.getItem("9"));
+  $("10 .formControl").val(localStorage.getItem("10"));
+  $("11 .formControl").val(localStorage.getItem("11"));
+  $("12 .formControl").val(localStorage.getItem("12"));
+  $("13 .formControl").val(localStorage.getItem("12"));
+  $("14 .formControl").val(localStorage.getItem("14"));
+  $("15 .formControl").val(localStorage.getItem("15"));
+  $("16 .formControl").val(localStorage.getItem("16"));
+  $("17 .formControl").val(localStorage.getItem("17"));
+
+})
 
 
