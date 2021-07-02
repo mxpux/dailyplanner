@@ -6,7 +6,7 @@ var currentTime = moment().format("hA")
 var currentHour = parseInt(moment().format("h"))
 var dateDisplay = $("#currentDay")
 
-dateDisplay.text(todayDay + ", " + currentDate)
+dateDisplay.text(currentTime + " " + todayDay + ", " + currentDate)
 // WHEN I view the timeblocks for that day
 // THEN each timeblock is color coded to indicate whether it is in the past, present, or future
 // Get the current hour via Moment JS
@@ -25,7 +25,7 @@ var currentHour = moment().hour();
   // If the condition matches, it will add the class the "current hour" belong to.
   if (checkHour < currentHour) {    
     $(this).addClass("past");
-  }
+  } 
   else if (checkHour === currentHour) {
     $(this).addClass("present");    
   }
@@ -38,11 +38,12 @@ var currentHour = moment().hour();
   // save Agenda to local storage
   saveAgenda = $(this).siblings(".formControl").val();
   console.log(saveAgenda);
-  //save time-block to local storage
+  // save time-block to local storage
   saveTime = $(this).closest(".time-block").attr("id");
   console.log(saveTime);
   localStorage.setItem(saveTime, saveAgenda);
 
+  // Text area and form control to see the saved Agenda item in Console
   $("9 .formControl").val(localStorage.getItem("9"));
   $("10 .formControl").val(localStorage.getItem("10"));
   $("11 .formControl").val(localStorage.getItem("11"));

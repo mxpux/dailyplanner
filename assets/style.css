@@ -2,12 +2,12 @@ body {
   font-family: 'Akaya Kanadaka', cursive;
   font-size: 19px;
   line-height: 1;
-  background-color: rgb(224, 227, 233);
+  background-color: rgb(246, 248, 254);
 }
 
 h1 {
-  font-family: 'Akaya Kanadaka', cursive;
-
+  font-family: 'Lato', sans-serif;
+  color: #4b8fe3;
 }
 
 #currentDay {
@@ -25,9 +25,10 @@ textarea{
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: #19171d;
   border-left: 1px solid black;
   padding: 10px;
+  font-weight: bolder;
   font-family: 'Mulish', sans-serif;
 }
 
@@ -36,7 +37,6 @@ textarea{
   background-color: transparent;
   color: rgb(30, 31, 69);
   border-radius: 0;
-  border-bottom: 10px solid black;
   font-family: 'Mulish', sans-serif;
 }
 
@@ -56,9 +56,13 @@ textarea{
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
+  color: #ffffff;
   border-top: 1px dashed #000000;
+  font-family: 'Mulish', sans-serif;
+  font-size: 13px;
+  padding-top: 20px;
+  background-color: #4b8fe3;
+
 }
 
 .past {
@@ -84,6 +88,8 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 30px;
+.saveBtn:hover {
+  font-size: 35px;
+  color: white;
+
 }
