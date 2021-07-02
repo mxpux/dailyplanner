@@ -1,6 +1,6 @@
 # **D A I L Y P L A N N E R**
 #### 
- > DailyPlanner link: [**Daily Planner**](https://mxpux.github.io/triviaquiz/)
+ > DailyPlanner link: [**Daily Planner**](https://mxpux.github.io/dailyplanner/)
 
 ***
 
